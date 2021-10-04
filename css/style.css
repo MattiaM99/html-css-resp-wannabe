@@ -62,8 +62,67 @@ img{
 
 /*PARTE RESPONSIVE*/
 
+/* RESPONSIVE A 780PX */
+
+@media screen and (max-width: 780px) {
+  *{
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .row{
+    margin:  0;
+    width: 100%;
+    text-align: center;
+  }
+  .container{
+    margin: 5% 0;
+  }
+  .container.grey{
+    background-color: teal;
+  }
+
+  h1{
+    margin: 5% 0;
+  }
+
+  /* BLOCCO LEZ */
+  #lezioni .row > .left, 
+  #lezioni .row > .right{
+    margin: 5% 2%;
+    width: 46%;
+  }
+
+  /* BLOCCO STEPS */
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right{
+    float: none;
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  /* BLOCCO PERCHE */
+  #why hr{
+    margin: 8% 0;
+    color: white;
+   }
+ 
+   #why .row > .first,
+   #why .row > .second,
+   #why .row > .third{
+    margin: 5% 0;
+   }
+
+}
+
+
+/* RESPONSIVE A 420 PX */
+
 @media screen and (max-width: 420px){
   *{
+    transition: 0.5s;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -75,14 +134,17 @@ img{
     margin: 5% 0;
   }
 
-.container.grey{
-  background-color: wheat;
-}
+  .container.grey{
+    background-color: wheat;
+  }
   .row{
-    text-align: left;
     margin:  0;
     width: 100%;
     text-align: center;
+  }
+
+  h1{
+    margin: 5% 0;
   }
 
   /* BLOCCO LEZIONI */
@@ -91,7 +153,6 @@ img{
     width: 100%;
     float: none;
     text-align: center;
-    
     padding: 5% 0;
   }
   #lezioni .row img{
@@ -118,3 +179,5 @@ img{
    margin: 5% 0;
   }
 }
+
+
